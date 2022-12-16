@@ -5,43 +5,73 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Toolbar from '@mui/material/Toolbar';
-import AppBar from '@mui/material/AppBar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import { Outlet, Link } from "react-router-dom";
-
+import CardMedia from '@mui/material/CardMedia';
 import React from 'react'; 
-
 
 export default function App() {
   return (
     <React.Fragment>
       <CssBaseline />
       <Container fixed >
-        <Box sx={{ bgcolor: 'white', height: '100vh',  padding: '2%' }}>
-          <Card className="card-1" sx={{ minWidth: 175,  padding: '2px', marginTop: '37px', marginLeft: '34px', marginRight: '34px', bgcolor: '#f0f5f5', border: 1, borderTop: 2, borderColor: '#f0f0f5' }}>
-            <CardContent sx={{ marginTop: '23px'}}>
-              <Typography variant="h1" component="div" id="typo" style={{ fontFamily: 'Times New Roman, Times, serif' , textAlign: 'center', marginTop: '95px', textShadow: '1px 3px 2px #a2cf6e' }}>
+        <Box id="box-1">
+          <Card id="card-1" sx={{ borderBottom: 1, borderTop: 1,  borderColor: 'gold' }}>
+            <CardContent id="card-content-1">
+              <Typography variant="h2" component="div" id="typo-1">
                 Patrick Morgan
               </Typography>
-              <Typography variant="h4" id="typo" style={{ textAlign: 'center', marginTop: '36px', marginBottom: '144px' }}>
-                experienced kitchen manager for hire.         
+              {/* <Typography variant="h4" id="typo-3" sx={{ wordSpacing: '.5em'}}>
+                dedicated |  respectable |  authoritative
+              </Typography> */}
+              <Typography variant="h5" id="typo-2">
+                 experienced kitchen manager and head cook for hire.      
               </Typography>
+              <hr />
             </CardContent>
-          </Card>
-
-            <Box sx={{ flexGrow: 1 , marginTop: '53px', textAlign: 'center'}}>
-              <Box>           
-                <Button><Link to="/search" className="button"> Search Catalog</Link></Button> 
-                <Button><Link to="/catalog">Drink Catalog</Link></Button> 
-                <Button><Link to="/random">Generate Random Recipe!</Link></Button>
-                <Outlet />
+          </Card>         
+            <Box>
+              <Box  
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    id='link-box' 
+                    flexDirection= 'column'> 
+                    
+                <Link to="/job-experience" id="first-link">Job Experience</Link>               
+                {/* <Link to="/recipes" id="first-link">Recipes</Link> */}
+                <Link to="/certificates" id="first-link">Certificates</Link>
+                <Link to="/contact" id="first-link">Contact</Link>
+              </Box>               
+              <Outlet />
+                
+                <Card id="card-2" sx={{ borderTop: 1, borderColor: 'gold'}} >
+                  <Typography component="div" id="blog" variant="h2">Blog</Typography>
+                  <CardContent id="card-content">
+                    <Card id="card-3">
+                      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                        <CardContent>
+                          <Typography component="div" variant="h4">
+                                Live From Space
+                          </Typography>
+                          <Typography variant="subtitle2" color="text.secondary" component="div">
+                                Mac Miller
+                          </Typography>
+                        </CardContent>
+                      </Box>
+                    <CardMedia
+                      component="img"
+                      sx={{ width: '420px', height: '300px' , padding: '1%'}}
+                      image={require("./joanna.jpg")}
+                      alt="Live from space album cover"
+                      />
+                    </Card>
+                  </CardContent>
+                </Card>
               </Box>
             </Box>
-          </Box>
         </Container>
-    </React.Fragment>
+      </React.Fragment>
     );
   }
 

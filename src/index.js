@@ -1,61 +1,3 @@
-// import { render } from "react-dom";
-// import {
-//   BrowserRouter,
-//   Routes,
-//   Route,
-// } from "react-router-dom";
-// import App from "./App";
-// import Expenses from "./routes/expenses";
-// import Invoices from "./routes/invoices";
-// import Articles from "./routes/articles";
-// import Invoice from "./routes/invoice";
-// import Article from './routes/article';
-
-// import Box from '@mui/material/Box';
-
-
-// const rootElement = document.getElementById("root");
-// render(
-//   <BrowserRouter>
-//     <Routes>
-//       <Route path="/" element={<App />}>
-//         <Route path="expenses" element={<Expenses />} />
-//         <Route path="invoices" element={<Invoices />}>
-          
-//             <Route
-//             index
-//             element={
-//               <main style={{ padding: "1rem" }}>
-//                 <p>Select an invoice</p>
-//               </main>
-//             }
-//           />
-//           <Route path=":invoiceId" element={<Invoice />} />
-//         </Route>
-//         <Route path="articles" element={<Articles />}>
-//           <Route
-//             index
-//             element={
-//               <main style={{ padding: "1rem" }}>
-//                 <p>Select an article</p>
-//               </main>
-//             }
-//           />
-//           <Route path=":articleId" element={<Article />} />
-//         </Route>
-//         <Route
-//           path="*"
-//           element={
-//             <main style={{ padding: "1rem" }}>
-//               <p>There's nothing here!</p>
-//             </main>
-//           }
-//         />
-//       </Route>
-//     </Routes>
-//   </BrowserRouter>,
-//   rootElement
-// );
 
 import { render } from "react-dom";
 import {
@@ -64,19 +6,20 @@ import {
   Route
 } from "react-router-dom";
 import App from "./App";
-import Catalog from "./routes/cocktail_directory";
-import Search from "./routes/search";
-import Random from "./routes/random"
+import JobExperience from "./routes/job_experience";
+import Certificates from "./routes/certificates";
+import Contact from "./routes/contact";
 
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="catalog" element={<Catalog />} />
-        <Route path="search" element={<Search />} />
-        <Route path="random" element={<Random />} />
-      </Route>
+        <Route path="certificates" element={<Certificates />} />
+        <Route path="job-experience" element={<JobExperience />} />
+        <Route path="contact" element={<Contact />} />
+       
+      </Route> 
     </Routes>
   </BrowserRouter>,
   rootElement
