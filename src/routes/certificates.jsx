@@ -1,122 +1,127 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import './routes.css';
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
 
-var cardStyle = {
-  display: 'block',
-  width: 'auto',
-  padding: '3%',
-  marginBottom: '34px',
-  transitionDuration: '0.3s',
-  height: 'auto'
-}
 
 export default function RecipeReviewCard() {
-  // const [expanded, setExpanded] = React.useState(false);
 
   return (
-      <Box id="cert-box"  sx={{ border: 1, borderColor: 'gold', bgcolor: '#fffcbfe2'}}>
+      <Box id="cert-box"  sx={{ marginTop: '64px', marginBottom: '34px'}}>
         <h1 id="dirty-secret">Certificates and Permits</h1>
-        <Card id="cert-card" style={cardStyle}>
-          <CardHeader
-            avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                R
-              </Avatar>
-            }
-            action={
-              <IconButton aria-label="settings">
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="Shrimp and Chorizo Paella"
-            subheader="September 14, 2016"
-          />
-          <CardMedia
-            component="img"
-            height="194"
-            image={require("../ella-olsson.jpg")}
-            alt="Paella dish"
-          />
-          <CardContent>
-            <Typography variant="body2" color="text.secondary">
-              This impressive paella is a perfect party dish and a fun meal to cook
-              together with your guests. Add 1 cup of frozen peas along with the mussels,
-              if you like.
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card style={cardStyle}>
-          <CardHeader
-            avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                R
-              </Avatar>
-            }
-            action={
-              <IconButton aria-label="settings">
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="Shrimp and Chorizo Paella"
-            subheader="September 14, 2016"
-          />
-          <CardMedia
-            component="img"
-            height="194"
-            image={require("../ella-olsson.jpg")}
+        <hr style={{ marginBottom: '64px' }}/>
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Grid item xs={6}>
+            <Item> 
+              <Card sx={{ maxWidth: 'auto' }}>
+                
+                  <CardMedia
+                    component="img"
+                    height="340"
+                    image={require('../photos/utah-food-handler.jpg')}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h4" component="div">
+                      Food Handlers Permit - UT
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography>
+                  </CardContent>
+      
+              </Card>
+            </Item>
+          </Grid>
+        
+          <Grid item xs={6}>
+            <Item> 
+              <Card sx={{ maxWidth: 'auto' }}>
+               
+                  <CardMedia
+                    component="img"
+                    height="340"
+                    image={require('../photos/Food_Manager_Badge.png')}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h4" component="div">
+                      ServSafe Food Certified
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography>
+                  </CardContent>
+               
+              </Card>
+            </Item>
+          </Grid>
 
-            alt="Paella dish"
-          />
-          <CardContent>
-            <Typography variant="body2" color="text.secondary">
-              This impressive paella is a perfect party dish and a fun meal to cook
-              together with your guests. Add 1 cup of frozen peas along with the mussels,
-              if you like.
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card style={cardStyle}>
-          <CardHeader
-            avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                R
-              </Avatar>
-            }
-            action={
-              <IconButton aria-label="settings">
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="Shrimp and Chorizo Paella"
-            subheader="September 14, 2016"
-          />
-          <CardMedia
-            component="img"
-            height="194"
-                        image={require("../ella-olsson.jpg")}
+          <Grid item xs={6} sx={{ marginTop: '33px'}}>
+            <Item> 
+              <Card sx={{ maxWidth: 'auto' }}>
+               
+                  <CardMedia
+                    component="img"
+                    height="340"
+                    image={require('../photos/grms_badge.png')}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h4" component="div">
+                      Global Red Meta Standard (GRMS) 
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography>
+                  </CardContent>
+              
+              </Card>
+            </Item>
+          </Grid>
 
-            alt="Paella dish"
-          />
-          <CardContent>
-            <Typography variant="body2" color="text.secondary">
-              This impressive paella is a perfect party dish and a fun meal to cook
-              together with your guests. Add 1 cup of frozen peas along with the mussels,
-              if you like.
-            </Typography>
-          </CardContent>
-        </Card>
-    </Box>
+          <Grid item xs={6} sx={{ marginTop: '33px'}}>
+            <Item> 
+              <Card sx={{ maxWidth: 'auto' }}>
+              
+                  <CardMedia
+                    component="img"
+                    height="340"
+                    image={require('../photos/PRM-FS.png')}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h4" component="div">
+                       Kitchen Manager Certification (Utah)
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography>
+                  </CardContent>
+               
+              </Card>
+            </Item>
+          </Grid>
+        </Grid>
+      </Box>
 
   );
 }
