@@ -6,7 +6,7 @@ export default function Recipes() {
     <div>
       <Typography variant="h4" sx={{ 
         textAlign: 'center',
-        marginTop: '57px',
+        marginTop: '107px',
         marginBottom: '25px',
         fontFamily: 'Arial, Helvetica, sans-serif'
         }}>

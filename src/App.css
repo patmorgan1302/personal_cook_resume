@@ -10,7 +10,7 @@
     
   #box-1 {
     background-color: rgb(254, 254, 254);
-    min-height: 100%;
+    min-height: 937px;
     height: 100%;
     padding: 2%;
     /* border-top: 1px solid rgba(157, 162, 58, 0.75);
@@ -21,7 +21,7 @@
   #typo-1 { 
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    margin-top: 176px;
+    margin-top: 126px;
     font-weight: bold;
     text-align: center;
  
@@ -38,7 +38,7 @@
   #typo-2 { 
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 2px;
     font-weight: bold;
     margin-bottom: 15px;
     text-align: center;
@@ -50,13 +50,13 @@
   }
 
   #first-link {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold; 
     text-decoration: none;
     color: rgba(24, 24, 24, 0.789);
-    padding: 15px 28px;
+    padding: 11px 15px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
   #top-link {
