@@ -8,7 +8,7 @@ import {
 import App from "./App";
 import JobExperience from "./routes/job_experience";
 import Certificates from "./routes/certificates";
-import Recipes from "./routes/recipes";
+import About from "./routes/about";
 import Home from './routes/home';
 import Contact from "./routes/contact";
 
@@ -20,7 +20,7 @@ render(
         <Route path="/" element={<Home />} />
         <Route path="certificates" element={<Certificates />} />
         <Route path="job-experience" element={<JobExperience />} />
-        <Route path="recipes" element={<Recipes />} />
+        <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
        
       </Route> 

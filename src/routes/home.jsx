@@ -11,7 +11,7 @@ export default function Recipes() {
         fontFamily: 'Arial, Helvetica, sans-serif'
         }}>
         welcome to my site, please take a look around!
-        <hr/>
+        <hr style={{ marginBottom: '235px'}}/>
       </Typography>
    
     </div>

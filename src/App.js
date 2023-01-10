@@ -1,5 +1,4 @@
 import './App.css';
-
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -7,14 +6,10 @@ import { Link, Outlet } from "react-router-dom";
 import React from 'react'; 
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import ReactRoundedImage from "react-rounded-image";
 import AppBar from '@mui/material/AppBar';
-import BlackSliders from "./photos/blacksliders.png";
-import Grid from '@mui/material/Grid';
 
 
 export default function App() {
-
   return (
     <React.Fragment >
       <CssBaseline />
@@ -40,13 +35,10 @@ export default function App() {
                     <Link to="/" id="first-link">Home</Link>
                     <Link to="/job-experience" id="first-link">Job Experience</Link>
                     <Link to="/certificates" id="first-link">Certificates</Link>
-                    <Link to="/recipes" id="first-link">Recipes</Link>   
+                    <Link to="/about" id="first-link">About Me</Link>   
                     <Link to="/contact" href='#card-2' id="first-link">Contact</Link>   
                   </Toolbar>
                 </AppBar> 
-
-
-
 
                 <Container sx={{ 
                     background: '#f0f5f5', 
@@ -63,12 +55,7 @@ export default function App() {
                       experienced kitchen manager and head cook for hire. 
                         
                     </Typography>
-                    {/* <hr style={{ marginTop: '34px'}} />    */}
                   </Container>
-
-
-
-
 
               <Outlet style={{ marginTop: '45px'}}/>
             <h5 id="footer-header">ⒸSpriggDiddy Productions and Design</h5>
