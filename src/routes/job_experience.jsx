@@ -67,7 +67,7 @@ export default function RecipeReviewCard() {
             />
                 <CardMedia>
                   <ol id="job-lists">
-                    <li id="list-item">Oversaw daily preparations before catering events and truck maintenance.</li>
+                    <li id="list-item">Oversaw daily preparations before catering events, as well as daily truck maintenance.</li>
                     <hr />
                     <li id="list-item"> Responsible for all operations getting to their destination safely, as well as assigning positions for serving, and post service cleaning jobs.</li>
                     <hr />

@@ -28,7 +28,6 @@ export default function RecipeReviewCard() {
           <Grid item xs={6}>
             <Item> 
               <Card sx={{ maxWidth: 'auto' }}>
-                
                   <CardMedia
                     component="img"
                     height="340"
@@ -39,12 +38,7 @@ export default function RecipeReviewCard() {
                     <Typography gutterBottom variant="h4" component="div">
                       Food Handlers Permit - UT
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
                   </CardContent>
-      
               </Card>
             </Item>
           </Grid>
@@ -52,7 +46,6 @@ export default function RecipeReviewCard() {
           <Grid item xs={6}>
             <Item> 
               <Card sx={{ maxWidth: 'auto' }}>
-               
                   <CardMedia
                     component="img"
                     height="340"
@@ -63,12 +56,7 @@ export default function RecipeReviewCard() {
                     <Typography gutterBottom variant="h4" component="div">
                       ServSafe Food Certified
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
                   </CardContent>
-               
               </Card>
             </Item>
           </Grid>
@@ -87,12 +75,7 @@ export default function RecipeReviewCard() {
                     <Typography gutterBottom variant="h4" component="div">
                       Global Red Meta Standard (GRMS) 
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
                   </CardContent>
-              
               </Card>
             </Item>
           </Grid>
@@ -111,12 +94,7 @@ export default function RecipeReviewCard() {
                     <Typography gutterBottom variant="h4" component="div">
                        Kitchen Manager Certification (Utah)
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
                   </CardContent>
-               
               </Card>
             </Item>
           </Grid>
